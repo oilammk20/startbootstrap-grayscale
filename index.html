@@ -2,28 +2,28 @@
 <html lang="en">
 
 <head>
-<!-- COMMON TAGS -->
-<meta charset="utf-8">
-<title>KOL</title>
-<!-- Search Engine -->
-<meta name="description" content="Oilammk20">
-<meta name="image" content="https://oilammk20.github.io/startbootstrap-grayscale/img/3-ocean.jpg">
-<!-- Schema.org for Google -->
-<meta itemprop="name" content="KOL">
-<meta itemprop="description" content="Oilammk20">
-<meta itemprop="image" content="https://oilammk20.github.io/startbootstrap-grayscale/img/3-ocean.jpg">
-<!-- Open Graph general (Facebook, Pinterest & Google+) -->
-<meta name="og:title" content="KOL">
-<meta name="og:description" content="Oilammk20">
-<meta name="og:image" content="https://oilammk20.github.io/startbootstrap-grayscale/img/3-ocean.jpg">
-<meta name="og:url" content="https://oilammk20.github.io/startbootstrap-grayscale">
-<meta name="og:site_name" content="Demo Site">
-<meta name="og:type" content="website">
+  <!-- COMMON TAGS -->
+  <meta charset="utf-8">
+  <title>KOL</title>
+  <!-- Search Engine -->
+  <meta name="description" content="Oilammk20">
+  <meta name="image" content="https://oilammk20.github.io/startbootstrap-grayscale/img/3-ocean.jpg">
+  <!-- Schema.org for Google -->
+  <meta itemprop="name" content="KOL">
+  <meta itemprop="description" content="Oilammk20">
+  <meta itemprop="image" content="https://oilammk20.github.io/startbootstrap-grayscale/img/3-ocean.jpg">
+  <!-- Open Graph general (Facebook, Pinterest & Google+) -->
+  <meta name="og:title" content="KOL">
+  <meta name="og:description" content="Oilammk20">
+  <meta name="og:image" content="https://oilammk20.github.io/startbootstrap-grayscale/img/3-ocean.jpg">
+  <meta name="og:url" content="https://oilammk20.github.io/startbootstrap-grayscale">
+  <meta name="og:site_name" content="Demo Site">
+  <meta name="og:type" content="website">
 
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
   <meta name="author" content="">
 
-  
+
 
   <!-- Bootstrap core CSS -->
   <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
@@ -168,10 +168,34 @@
         </div>
       </div>
 
+      <style>
+        .project-slider {
+          height: 100%;
+          min-height: 400px;
+        }
+
+        .project-slider .slick-list,
+        .project-slider .slick-track,
+        .project-slider .slick-slide,
+        .project-slider .slick-slide>div {
+          height: 100%;
+        }
+
+        .project-slider .image-bg {
+          height: 100%;
+          background-position: center center;
+          background-size: cover;
+          background-repeat: no-repeat;
+        }
+      </style>
+
       <!-- Project One Row -->
       <div class="row justify-content-center no-gutters mb-5 mb-lg-0">
         <div class="col-lg-6">
-          <img class="img-fluid" src="img/demo-image-01.jpg" alt="">
+          <div class="slider project-slider">
+            <div class="image-bg" style="background-image:url(img/slider/1.jpg);"></div>
+            <div class="image-bg" style="background-image:url(img/slider/2.jpg);"></div>
+          </div>
         </div>
         <div class="col-lg-6">
           <div class="bg-black text-center h-100 project">
@@ -190,7 +214,7 @@
       <!-- Project Two Row -->
       <div class="row justify-content-center no-gutters">
         <div class="col-lg-6">
-          <img class="img-fluid" src="img/demo-image-02.jpg" alt="">
+          <img class="img-fluid" src="img/2.jpg" alt="">
         </div>
         <div class="col-lg-6 order-lg-first">
           <div class="bg-black text-center h-100 project">
@@ -206,6 +230,44 @@
         </div>
       </div>
 
+
+      <!-- Project Three Row -->
+      <div class="row justify-content-center no-gutters mb-5 mb-lg-0">
+        <div class="col-lg-6">
+          <img class="img-fluid" src="img/3.jpg" alt="">
+        </div>
+        <div class="col-lg-6">
+          <div class="bg-black text-center h-100 project">
+            <div class="d-flex h-100">
+              <div class="project-text w-100 my-auto text-center text-lg-left">
+                <h4 class="text-white">Misty</h4>
+                <p class="mb-0 text-white-50">An example of where you can put an image of a project, or anything else,
+                  along with a description.</p>
+                <hr class="d-none d-lg-block mb-0 ml-0">
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Project Four Row -->
+      <div class="row justify-content-center no-gutters">
+        <div class="col-lg-6">
+          <img class="img-fluid" src="img/4.jpg" alt="">
+        </div>
+        <div class="col-lg-6 order-lg-first">
+          <div class="bg-black text-center h-100 project">
+            <div class="d-flex h-100">
+              <div class="project-text w-100 my-auto text-center text-lg-right">
+                <h4 class="text-white">Mountains</h4>
+                <p class="mb-0 text-white-50">Another example of a project with its respective description. These
+                  sections work well responsively as well, try this theme on a small screen!</p>
+                <hr class="d-none d-lg-block mb-0 mr-0">
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
   </section>
 
@@ -224,6 +286,16 @@
             <button type="submit" class="btn btn-primary mx-auto">Subscribe</button>
           </form>
 
+          <style>
+            #google-form {
+              width: 100%;
+              margin-top: 50px;
+            }
+          </style>
+          <iframe id="google-form"
+            src="https://docs.google.com/forms/d/e/1FAIpQLScK-hTZ_tSs5ys7TNcA4zihCoENsWW3SNWIHZc6AmlV0pk-Rw/viewform?embedded=true"
+            height="3793" frameborder="0" marginheight="0" marginwidth="0">正在載入…
+          </iframe>
         </div>
       </div>
     </div>
